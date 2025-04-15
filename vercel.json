@@ -1,0 +1,10 @@
+{
+    "build": {
+        "env": {
+            "NEXT_PRIVATE_SKIP_ESLINT": "true"
+        }
+    },
+    "rewrites": [],
+    "redirects": [],
+    "headers": []
+}
