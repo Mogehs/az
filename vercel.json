@@ -4,7 +4,10 @@
             "NEXT_PRIVATE_SKIP_ESLINT": "true"
         }
     },
-    "rewrites": [],
-    "redirects": [],
-    "headers": []
+    "rewrites": [
+        {
+            "source": "/(.*)",
+            "destination": "/"
+        }
+    ]
 }
