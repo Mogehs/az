@@ -1,6 +1,6 @@
 import Tags from "@/components/Tags";
 
-const text = `You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
+const text = `You aim to excel in content creation, design, development, and e-commerce — but switching between complex tools slows you down.`;
 
 export default function Introduction() {
     return (

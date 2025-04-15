@@ -5,7 +5,7 @@ import Pointer from "@/components/Pointer";
 
 export default function Hero() {
     return (
-        <section className="py-24 overflow-x-clip">
+        <section className="pt-32 pb-24 overflow-x-clip">
             <div className="container relative">
                 <div className="absolute -top-12 -left-[130px] hidden lg:block">
                     <Image
@@ -31,13 +31,18 @@ export default function Hero() {
                     </div>
                 </div>
                 <h1 className="text-6xl md:text-7xl font-medium text-center mt-5 lg:w-[65vw] mx-auto">
-                    Impactful Websites, created effortlessly
+                    Your One-Stop Solution for Digital Excellence
                 </h1>
                 <p className="text-center text-xl text-white/50 mt-6 lg:w-[62vw] mx-auto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Sint dicta numquam veritatis quas incidunt reprehenderit!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Corporis, architecto quod?
+                    From captivating content and stunning visuals to
+                    cutting-edge web development and eCommerce store setup — we
+                    offer a full suite of creative and technical services under
+                    one roof. Whether you need expert content writing, graphic
+                    design, video editing, game development, or support with
+                    your Amazon and Shopify stores, our team delivers impactful
+                    results tailored to your needs. We also provide reliable
+                    call center solutions to ensure seamless customer
+                    engagement.
                 </p>
                 <form className="flex sm:flex-row items-center gap-4 sm:gap-0 border border-white/15 rounded-full p-2 mt-8 max-w-xl mx-auto">
                     <input
