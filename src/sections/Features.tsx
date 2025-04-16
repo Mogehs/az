@@ -71,15 +71,14 @@ export default function Features() {
                         </div>
                     </FeatureCard>
                     <FeatureCard
-                        title="Interactive prototyping"
-                        description=" Engage your clients with prototypes that react
-                                    to user actions"
+                        title="Professional Video Editing"
+                        description="Captivate your audience with polished, high-quality videos tailored to your brand or message."
                         className="col-span-2 lg:col-span-1"
                     >
-                        <div className="aspect-video flex items-center justify-center ">
+                        <div className="aspect-video flex items-center justify-center">
                             <p className="text-4xl font-extrabold text-white/20 text-center">
                                 We've acheived{" "}
-                                <span className="bg-gradient-to-r from-purple-400 to-[#B8945E] rounded-full p-1 bg-clip-text text-transparent">
+                                <span className="bg-gradient-to-r from-purple-800 to-pink-400 rounded-full p-1 bg-clip-text text-transparent">
                                     incredible{" "}
                                 </span>
                                 growth this year
@@ -87,15 +86,14 @@ export default function Features() {
                         </div>
                     </FeatureCard>
                     <FeatureCard
-                        title="Keyboard Quick Actions"
-                        description="
-                                    Powerful commands to help you work more quickkly"
+                        title="Online Store Development"
+                        description="From Shopify to Amazon, get complete solutions for launching and scaling your e-commerce business."
                         className="col-span-2 md:col-start-2 lg:col-span-1"
                     >
-                        <div className="aspect-video flex items-center justify-center gap-4">
-                            <Key className="w-28">shift</Key>
-                            <Key>alt</Key>
-                            <Key>C</Key>
+                        <div className="aspect-video flex items-center justify-center gap-4 flex-wrap sm:flex-nowrap">
+                            <Key className="w-fit px-3">Think</Key>
+                            <Key className="w-fit px-3">Code</Key>
+                            <Key className="w-fit px-3">Develope</Key>
                         </div>
                     </FeatureCard>
                 </div>

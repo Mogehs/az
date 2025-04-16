@@ -1,28 +1,31 @@
 import Image from "next/image";
-import designExample1Image from "../assets/images/design-example-1.png";
-import designExample2Image from "../assets/images/design-example-2.png";
+
+import designExample3Image from "../assets/images/design-example-3.png";
+import designExample4Image from "../assets/images/design-example-4.png";
 import Pointer from "@/components/Pointer";
 
 export default function Hero() {
     return (
-        <section className="pt-32 pb-24 overflow-x-clip">
+        <section className="py-24 overflow-x-clip">
             <div className="container relative">
-                <div className="absolute -top-12 -left-[130px] hidden lg:block">
+                <div className="absolute top-10 -left-[100px] hidden lg:block">
                     <Image
-                        src={designExample1Image}
+                        src={designExample3Image}
                         alt="designExampleImage"
+                        className="w-[300px] rounded-lg"
                     ></Image>
                 </div>
-                <div className="absolute -top-20 -right-64 hidden lg:block">
+                <div className="absolute -top-8 -right-24 hidden lg:block">
                     <Image
-                        src={designExample2Image}
+                        src={designExample4Image}
                         alt="designExampleImage"
+                        className="w-[300px] rounded-lg"
                     ></Image>
                 </div>
                 <div className="absolute left-56 top-96 hidden lg:block">
                     <Pointer name="Andreas" />
                 </div>
-                <div className="absolute right-56 top-16 hidden lg:block">
+                <div className="absolute right-40 top-16 hidden lg:block">
                     <Pointer name="Andreas" color="red" />
                 </div>
                 <div className="flex justify-center">

@@ -13,7 +13,7 @@ export default function Introduction() {
                     <span>Your creative process deserves better</span>{" "}
                     <span className=" text-white/15">{text}</span>
                     <span className="text-[#BA935E]">
-                        That&apos;s why we built Layers
+                        That&apos;s why we built AZ
                     </span>
                 </div>
             </div>
