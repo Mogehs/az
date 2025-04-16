@@ -6,7 +6,7 @@ import Pointer from "@/components/Pointer";
 
 export default function Hero() {
     return (
-        <section className="py-24 overflow-x-clip">
+        <section className="py-20 overflow-x-clip">
             <div className="container relative">
                 <div className="absolute top-10 -left-[100px] hidden lg:block">
                     <Image
@@ -33,10 +33,10 @@ export default function Hero() {
                         ✨ $7.5M seed round raised
                     </div>
                 </div>
-                <h1 className="text-6xl md:text-7xl font-medium text-center mt-5 lg:w-[65vw] mx-auto">
+                <h1 className="text-6xl md:text-7xl font-medium text-center mt-5 lg:w-[50rem] mx-auto">
                     Your One-Stop Solution for Digital Excellence
                 </h1>
-                <p className="text-center text-xl text-white/50 mt-6 lg:w-[62vw] mx-auto">
+                <p className="text-center text-xl text-white/50 mt-6 lg:w-[49rem] mx-auto">
                     From captivating content and stunning visuals to
                     cutting-edge web development and eCommerce store setup — we
                     offer a full suite of creative and technical services under
