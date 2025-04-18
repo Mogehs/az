@@ -1,3 +1,4 @@
+"use client";
 import FeatureCard from "@/components/FeatureCard";
 import Tags from "@/components/Tags";
 import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg";
@@ -6,6 +7,8 @@ import avatar3 from "@/assets/images/avatar-florence-shaw.jpg";
 import Image from "next/image";
 import Avatar from "@/components/Avatar";
 import Key from "@/components/Key";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 const features = [
     "Asset Library",
@@ -18,6 +21,26 @@ const features = [
 ];
 
 export default function Features() {
+    const ref = useRef(null);
+    const inView = useInView(ref, { once: true, margin: "-100px" });
+
+    const containerVariants = {
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.1,
+            },
+        },
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.4, ease: "easeOut" },
+        },
+    };
     return (
         <section className="py-20">
             <div className="container">
@@ -97,19 +120,26 @@ export default function Features() {
                         </div>
                     </FeatureCard>
                 </div>
-                <div className="mt-8 flex flex-wrap gap-3 justify-center pt-4">
+                <motion.div
+                    ref={ref}
+                    className="mt-8 flex flex-wrap gap-3 justify-center pt-4"
+                    variants={containerVariants}
+                    initial="hidden"
+                    animate={inView ? "visible" : "hidden"}
+                >
                     {features.map((feature, index) => (
-                        <div
+                        <motion.div
                             key={index}
-                            className="bg-netural-900 border border-white/10 inline-flex px-3 py-1.5 rounded-2xl gap-3 items-center"
+                            variants={itemVariants}
+                            className="bg-neutral-900 border border-white/10 inline-flex px-3 py-1.5 rounded-2xl gap-3 items-center"
                         >
                             <span className="bg-[#B8945E] text-[#062538] size-5 rounded-full inline-flex items-center justify-center text-xl">
                                 &#10038;
                             </span>
                             <span className="font-medium">{feature}</span>
-                        </div>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     );

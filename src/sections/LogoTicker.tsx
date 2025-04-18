@@ -34,7 +34,7 @@ export default function LogoTicker() {
                         className="flex flex-none gap-24 pr-24"
                         animate={{ x: "-50%" }}
                         transition={{
-                            duration: 20,
+                            duration: 100,
                             ease: "linear",
                             repeat: Infinity,
                         }}

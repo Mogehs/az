@@ -10,7 +10,7 @@ const footerLinks = [
 export default function Footer() {
     return (
         <section className="">
-            <div className="container bg-black rounded-t-2xl">
+            <div className="container bg-neutral-900 rounded-t-2xl border border-[#68543A]">
                 <div className="flex flex-col md:flex-row md:justify-between items-center p-6">
                     <div>
                         <Image src={logo} alt="logo" className="w-24" />
